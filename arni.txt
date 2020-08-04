@@ -1,0 +1,80 @@
+import java.util.Scanner;
+
+public class Main{
+ 
+ 
+       
+ public static void main(String[] args) {
+	   
+ System.out.println("Hi friends you can use me for calculation");
+	   
+ Boolean on=false;
+	   
+ Scanner s=new Scanner(System.in);
+	    
+ System.out.println("To ON type true / To OFF type false");
+	   
+ on=s.nextBoolean();
+       
+	
+ if (on==true)
+    
+ System.out.println("ON you can proceed");
+    
+ else 
+	
+ System.out.println("OFF please switch ON");
+	
+ int n1;
+	
+ int n2;
+	
+ char sym;
+	
+n1=s.nextInt();
+	
+n2=s.nextInt();
+	
+sym=s.next().charAt(0);
+	
+switch(sym){
+ 	 
+case '+':
+	 
+System.out.println(n1+n2);
+	 
+break;
+	 
+case '-' :
+	 
+System.out.println(n1-n2);
+	 
+break;
+	 
+case '*' :
+	 
+System.out.println(n1*n2);
+	 
+break;
+	 
+case '/' :
+	 
+System.out.println(n1/n2);
+	 
+break;
+	 
+case '%':
+	 
+System.out.println(n1%n2);
+	 
+break;
+	 
+default:
+	 
+System.out.println("symbol not found ");
+	 
+break;
+	 
+
+}}
+}
